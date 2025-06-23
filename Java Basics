@@ -1,0 +1,73 @@
+1.
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         String a = sc.nextLine();
+         System.out.println("Enter the Name " + a);
+         
+     }
+ }
+
+2.
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {  public static void main(String[]args)
+     {  Scanner sc = new Scanner (System.in);
+         System.out.println("Enter value for a and b");
+         String a = sc.nextLine();
+         String b = sc.nextLine();
+         System.out.println(b);
+         System.out.println(a);
+         System.out.print(b);
+         System.out.print(a);
+         
+     }
+ }
+
+3. To vote problem for if else condition program.
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        int age = 18;
+        int a = sc.nextInt();
+        if(a>=age) // check the age to vote ;if greater than or equal to age value 
+        {
+            System.out.print("To Vote");
+        }
+        else // not egilble to vote because less than age value
+        {
+            System.out.print("To Not Vote");
+        }
+         
+     }
+ }
+
+4.odd or even problem
+
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        if(a%2==0)
+        {
+            System.out.print("EVEN NUMBER");
+        }
+        else
+        {
+            System.out.print("ODD NUMBER");
+        }
+     }
+ }
