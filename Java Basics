@@ -151,3 +151,62 @@ class main{
         }
     }
 }
+
+9.Array basic program to print a string
+
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         String [] m = new String [3];
+         m [0] = sc.nextLine();
+         m [1] = sc.nextLine();
+         m [2] = sc.nextLine();
+         System.out.println("enter the m "+m[0]+" "+m[1]+" "+m[2]);
+     }
+ }
+
+10.Array basic program to print a string using for loop
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         String [] m = new String [3];
+         
+        for(int i=0;i<3;i++)
+        {
+             m [i] = sc.nextLine();
+        }
+         
+         for(int i=0;i<3;i++)
+         {
+             System.out.println(m[i]);
+         }
+     }
+ }
+11.Array basic program to print a string using for loop and getting a array size 
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         System.out.print("Enter the size of array; ");
+         int a = sc.nextInt();
+         String [] m = new String [a];
+         
+        for(int i=0;i<a;i++)
+        {
+             m [i] = sc.next();
+        }
+         
+         for(int i=0;i<a;i++)
+         {
+             System.out.print(m[i]);
+         }
+     }
+ }
