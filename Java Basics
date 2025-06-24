@@ -1,3 +1,4 @@
+DAY 1 - 23-06-25
 1.
 import java.util.*;
  import java.util.Scanner;
@@ -151,7 +152,8 @@ class main{
         }
     }
 }
-
+--------------------------------------------------------------------------------------------------------------------------
+DAY 2 - 24-06-25
 9.Array basic program to print a string
 
 import java.util.*;
@@ -307,3 +309,140 @@ import java.util.*;
 
      }
  }
+15.sorting Method of Array 
+
+ import java.util.*;
+  import java.util.Scanner;
+  class achu
+  {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         int a=sc.nextInt();
+         int n[]=new int[a];
+         for(int i=0;i<a;i++)
+        {
+             n[i]=sc.nextInt();
+ }
+ for(int i=0;i<a;i++){
+          Arrays.sort(n);
+     }
+     System.out.print(Arrays.toString(n));
+  }
+  }
+16.Reverse Method in array without using inbuilt function 
+
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         System.out.print("Enter the size of row; ");
+         int a = sc.nextInt();
+         int []m = new int [a];
+         for(int i=a-1;i>=0;i--)
+        {
+            m[i]=sc.nextInt();
+ }
+         for(int i=0;i<a;i++)
+        {
+            System.out.print(m[i]+" ");}}
+ }
+
+17.with return type with parameter
+  import java.util.*;
+  class main
+  {
+      static int add(int a,int b){
+          return a + b;
+      }
+      public static void main (String[]args){
+          int sum =add(5,3);
+          System.out.print("Sum of value are "+sum);
+      }
+  }
+
+18. no return type no parameter
+  import java.util.*;
+  class main 
+  {
+      static void main(){
+          int a =79;
+          int b=90;
+          int c=a+b;
+          System.out.print(c);
+      }
+      public static void main (String[]args){
+          main();
+      }
+  }
+
+19. with parameter no return type 
+    import java.util.*;
+  class main 
+  {
+      static void printname(String name){
+          System.out.print("Name: "+name);
+      }
+      public static void main (String[]args){
+      printname("Nakulachu");}
+  }
+
+20.no parameter with return type
+  import java.util.*;
+  class main
+{   
+    static  int number()
+        {
+            return 90;
+        }
+     public static void main (String[]args)
+     {
+         int getnumber=number();
+         System.out.print(getnumber);
+     }
+}
+
+21.input a=1,0,2,0,3
+   output a=1,2,3,0,0
+
+ import java.util.*;
+ class nakul
+{
+     public static void main(String[]args)
+     {
+         int a[]={1,0,2,0,3};
+         int count=0;
+        for(int i=0;i<a.length;i++)
+        {
+            if (a[i]==0)
+            {
+                count++;
+            }
+            else if(a[i]!=0)
+            {
+                System.out.print(a[i]);
+            }
+        
+        }
+        for(int i=0;i<count;i++)
+        {
+            System.out.print("0");
+        }
+     }
+ }
+
+22.To find a minimum and maximum value
+
+import java.util.*;
+class nakul
+{
+    public static void main(String[]args)
+    {
+        int a[]={2,4,6,8,7};
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+        System.out.println("mini value: " +a[0]+" "+"\n"+"max value: "+" "+a[a.length-1]);
+
+    }
+}
