@@ -446,3 +446,37 @@ class nakul
 
     }
 }
+
+23.to find a maximum number repeated in give number & print it 
+
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String []args)
+     {
+         Scanner sc = new Scanner (System.in);
+         int a=0,i=0;
+         int l[] = {1,1,2,3,4,1,3,3,3,1,1,1};
+         int k[] = new int[l.length];
+          int f=l[0];
+         for( i=0;i<l.length;i++)
+         {
+             int count=0;
+             for(int j=0;j<l.length;j++)
+             {
+                 if (l[i]==l[j])
+                 {
+                     count++;
+                 }
+                 
+             }
+             if(count>a)
+             {  a=count;
+                 f=l[i];
+             }
+         }System.out.print("count is: "+a+"\n");
+         System.out.println("maximum repeated value is: " + f);
+     }
+ }
+
