@@ -479,4 +479,271 @@ class nakul
          System.out.println("maximum repeated value is: " + f);
      }
  }
+INBULIT FUNCTIONS
 
+24.concatenation
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.concat(b));
+     }
+ }
+25.To change Upper case 
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.toUpperCase());
+     }
+ }
+26.To change Lower Case
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.toLowerCase());
+     }
+ }
+27.To fin a length
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.length());
+     }
+ }
+28.To find a character in string
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.charAt(2));
+     }
+ }
+29.To find Index of character
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.charAt(2));
+     }
+ }
+30.To campare a two string 
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.equals(b));
+     }
+ }
+31.To use a substring to cut a character in a string
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.substring(0,5));
+     }
+ }
+
+32.To replace a letter from the string 
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.replace('m','k'));
+     }
+ }
+
+33.To verify the sentence in a string 
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         String a = "murugan";
+         String b = "Nakulan";
+         System.out.print(a.contains("murugan"));
+     }
+ } 
+
+34.To reverese a string 
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        System.out.print("Reverse: "+sb.reverse());
+        
+     }
+ }
+35.To add a two string using an append key word 
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        sb.append(" love bikes");
+        System.out.print(sb);
+        
+     }
+ }
+36.To insert  a  string in another string
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        sb.insert(5," love bikes");
+        System.out.print(sb);
+        
+     }
+ }
+37.To delete in a string one range to another range
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        sb.delete(2,5);
+        System.out.print(sb);
+        
+     }
+ }
+38.To remove a particular character
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        sb.deleteCharAt(2);
+        sb.deleteCharAt(5);
+        System.out.print(sb);
+        
+     }
+ }
+39.to replace a string
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a your name:");
+        String Name = sc.nextLine();
+        StringBuffer sb = new StringBuffer(Name);
+        sb.replace(6,7,"achu");
+        sb.deleteCharAt(5);
+        System.out.print(sb);
+        
+     }
+ }
+40.to reverse a string without inbuilt function
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         System.out.print("enter a size ");
+         int a = sc.nextInt();
+         int i=0;
+         String []name = new String[a];
+         for( i=0;i<a;i++)
+         {
+             name[i]=sc.next();
+         }
+          for(i=0;i<a;i++)
+         {
+             System.out.print(name[i]);
+         }
+         System.out.print("\n");
+         for( i=name.length-1;i>=0;i--)
+         {
+             System.out.print(name[i]);
+         }
+     }
+ }
+41.palindrome problem
+import java.util.*;
+class achu {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String a = sc.nextLine();
+        String rev = "";
+        for (int i = a.length() - 1; i >= 0; i--) {
+            rev = rev + a.charAt(i);
+        }
+        System.out.print(rev+"\n");
+        if (a.equals(rev)) {
+            System.out.print("It is palindrome");
+        } else {
+            System.out.print("It is not a palindrome");
+        }
+    }
+}
