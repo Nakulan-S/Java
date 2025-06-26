@@ -732,8 +732,7 @@ import java.util.*;
 41.palindrome problem
 import java.util.*;
 class achu {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    pub Scanner sc = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String a = sc.nextLine();
         String rev = "";
@@ -741,10 +740,65 @@ class achu {
             rev = rev + a.charAt(i);
         }
         System.out.print(rev+"\n");
-        if (a.equals(rev)) {
+      lic static void main(String[] args) {
+         if (a.equals(rev)) {
             System.out.print("It is palindrome");
         } else {
             System.out.print("It is not a palindrome");
         }
     }
+}
+INBULIT FUNCTIONS
+         a.contains("red");
+         a.replace('h','k');
+         a.concat(b);
+         a.toUpperCase();
+         a.toLowerCase();
+         a.indexOf('u');
+         a.delete();
+         a.deletecharAt();
+         a.equals(b);
+         a.substring(1,2);
+         a.charAt(6);
+         a.length();
+---------------------------------------------------------------------------------------------------------------------------------------
+26-06-25
+42.Object-Oriented Programming (OOP) 
+How do you create a program to store and display details of multiple students using classes and objects?
+import java.util.*;
+import java.util.Scanner;
+class application
+{
+    String name = "";
+    int age ;
+    int mark ;
+    
+    void details()
+    {
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+        System.out.println("Mark: "+mark);
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a no.of students: ");
+        int a = sc.nextInt();
+        for(int i=0;i<a;i++){
+        application stu = new application ();
+        sc.nextLine();
+        System.out.print("Enter a Name: ");
+        stu.name = sc.nextLine();
+        System.out.print("Enter a Age: ");
+        stu.age = sc.nextInt();
+        System.out.print("Enter a Mark: ");
+        stu.mark = sc.nextInt();
+        stu.details();
+        }
+        
+    }
+    
 }
