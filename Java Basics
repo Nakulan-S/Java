@@ -702,37 +702,54 @@ import java.util.*;
         
      }
  }
-40.to reverse a string without inbuilt function
- import java.util.*;
- import java.util.Scanner;
- class achu
- {
-     public static void main(String[]args)
-     {
-         Scanner sc = new Scanner (System.in);
-         System.out.print("enter a size ");
-         int a = sc.nextInt();
-         int i=0;
-         String []name = new String[a];
-         for( i=0;i<a;i++)
-         {
-             name[i]=sc.next();
-         }
-          for(i=0;i<a;i++)
-         {
-             System.out.print(name[i]);
-         }
-         System.out.print("\n");
-         for( i=name.length-1;i>=0;i--)
-         {
-             System.out.print(name[i]);
-         }
-     }
- }
+40.to reverse a string without inbuilt function to check its palindrome or not.
+import java.util.*;
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int i=0,count=0;
+        System.out.print("Enter a name: ");
+        String b =sc.nextLine();
+        char c[]=new char[b.length()];
+        char d[]=new char[b.length()];
+        
+        for(i=0;i<b.length();i++)
+        {
+            c[i]=b.charAt(i);
+            d[b.length() - 1 - i] = c[i]; 
+        }
+        for(i=0;i<b.length();i++)
+        {
+            System.out.print(c[i]);
+        }
+         System.out.println();
+        for(i=0;i<b.length();i++)
+        {
+            if(c[i]==d[i])
+            {
+                count++;
+            }
+        }
+        System.out.println("Matching Words Count: "+count);
+        if(count==b.length())
+        {
+              System.out.println("palindrome");
+        }
+        else
+        {
+             System.out.println("Not palindrome");
+        }
+}
+}
 41.palindrome problem
 import java.util.*;
 class achu {
-    pub Scanner sc = new Scanner(System.in);
+    public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String a = sc.nextLine();
         String rev = "";
@@ -740,7 +757,7 @@ class achu {
             rev = rev + a.charAt(i);
         }
         System.out.print(rev+"\n");
-      lic static void main(String[] args) {
+  
          if (a.equals(rev)) {
             System.out.print("It is palindrome");
         } else {
@@ -802,3 +819,67 @@ public class Main
     }
     
 }
+43.multiple inhertance
+ class sothumuta{
+     void land(){
+         System.out.println("100 acer");
+     }
+ }
+ class nisha extends sothumuta{
+     void money(){
+         System.out.println("100 cr");
+     }
+ }
+ class achu extends nisha{
+     void currency(){
+         System.out.println("100 doller");
+     }
+ }
+  class nakul extends achu{
+     void gold(){
+         System.out.println("100 kg");
+     }
+ }
+ public class Main{
+     public static void main(String[]args){
+         nakul n = new nakul();
+         n.land();
+         n.money();
+         n.currency();
+         n.gold();
+     }
+ }
+44.hierarchical inhertiance
+ class sothumuta{
+     void land(){
+         System.out.println("100 acer");
+     }
+ }
+ class nisha extends sothumuta{
+     void money(){
+         System.out.println("100 cr");
+     }
+ }
+ class achu extends sothumuta{
+     void currency(){
+         System.out.println("100 doller");
+     }
+ }
+  class nakul extends sothumuta{
+     void gold(){
+         System.out.println("100 kg");
+     }
+ }
+ public class Main{
+     public static void main(String[]args){
+         nakul n = new nakul();
+         n.land();
+         n.gold();
+         achu k = new achu();
+         k.land();
+         k.currency();
+         nisha N = new nisha();
+         N.money();
+         N.land();
+     }
+ }
