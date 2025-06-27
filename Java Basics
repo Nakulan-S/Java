@@ -883,3 +883,120 @@ public class Main
          N.land();
      }
  }
+-----------------------------------------------------------------------------------------------------------------------------------------
+27-06-25
+45.To Reverse the Sentence 
+import java.util.*;
+ import java.util.Scanner;
+ class Main
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         String a = sc.nextLine();
+         String r[] = a.split(" ");
+         for(int i=r.length-1;i>=0;i--)
+         {
+             System.out.print(r[i]+" ");
+         }
+     }
+ }
+46.to remove a "b"&"ac" in string or to remove a two characterts
+import java.util.*;
+ import java.util.Scanner;
+ class Main
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         String n = "abrambabacsc";
+         char b[]=new char [n.length()];
+         int i=0;
+         for(i=0;i<n.length();i++)
+         {
+             b[i]=n.charAt(i);
+         }
+         for(i=0;i<n.length();i++)
+         {
+             if(b[i]=='b')
+             {
+            continue;
+             }
+             else if(i<n.length()-1&&b[i]=='a'&&b[i+1]=='c')
+             {
+                 i++;
+                 continue;
+             }
+             else
+             {
+                 System.out.print(b[i]);
+             }
+          }       
+     }
+ }
+47.polymorphism
+  method overloading
+ import java.util.Scanner;
+ class achu
+ {
+     void brand()
+     {
+         System.out.println("KTM");
+     }
+     void bike(String name)
+     {
+          System.out.println("Model: "+name); 
+     }
+     void speed(int a)
+     {
+         System.out.println("Top Speed: "+a);
+     }
+ }
+ class Main
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         int a = sc.nextInt();
+         sc.nextLine();
+         for(int i=0;i<a;i++){
+        String name = sc.nextLine();
+         achu k = new achu();
+         k.brand();
+         k.bike(name);
+         k.speed(170);
+         }
+     }
+ }
+48.polymorphism
+  method over riding
+// import java.util.Scanner;
+ class achu
+ {
+     void bike()
+     {
+         System.out.println("KTM");
+     }
+ }
+ class appu extends achu{
+     void bike()
+     {
+          System.out.println("Model"); 
+     }
+}
+ class scl extends appu{
+     void bike()
+     {
+          System.out.println("Models"); 
+     }
+}
+
+ class Main
+ {
+     public static void main(String[]args)
+     {
+       //  Scanner sc = new Scanner (System.in);
+         appu k = new scl();
+         k.bike();
+     }
+ }
