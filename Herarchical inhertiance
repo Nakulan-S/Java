@@ -1,0 +1,34 @@
+
+ class sothumuta{
+     void land(){
+         System.out.println("100 acer");
+     }
+ }
+ class nisha extends sothumuta{
+     void money(){
+         System.out.println("100 cr");
+     }
+ }
+ class achu extends sothumuta{
+     void currency(){
+         System.out.println("100 doller");
+     }
+ }
+  class nakul extends sothumuta{
+     void gold(){
+         System.out.println("100 kg");
+     }
+ }
+ public class Main{
+     public static void main(String[]args){
+         nakul n = new nakul();
+         n.land();
+         n.gold();
+         achu k = new achu();
+         k.land();
+         k.currency();
+         nisha N = new nisha();
+         N.money();
+         N.land();
+     }
+ }
