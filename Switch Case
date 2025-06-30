@@ -1,0 +1,27 @@
+//Switch Case
+
+import java.util.*;
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        int n=0;
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        switch(c){
+            case 1:
+            n=a+b;
+            System.out.println("the sum of numbers are : "+n);
+            break;
+            case 2:
+            n=a-b;
+            System.out.println("the subtraction of numbers are : "+n);
+            break;
+            case 3:
+            n=a*b;
+            System.out.println("the multiplication of numbers are : "+n);
+            break;
+        }
+    }
+}
