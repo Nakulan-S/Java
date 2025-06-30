@@ -1,0 +1,21 @@
+//To vote problem for if else condition program.
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        int age = 18;
+        int a = sc.nextInt();
+        if(a>=age) // check the age to vote ;if greater than or equal to age value 
+        {
+            System.out.print("To Vote");
+        }
+        else // not egilble to vote because less than age value
+        {
+            System.out.print("To Not Vote");
+        }
+         
+     }
+ }
