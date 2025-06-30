@@ -1,0 +1,34 @@
+//polymorphism
+  //method overloading
+ import java.util.Scanner;
+ class achu
+ {
+     void brand()
+     {
+         System.out.println("KTM");
+     }
+     void bike(String name)
+     {
+          System.out.println("Model: "+name); 
+     }
+     void speed(int a)
+     {
+         System.out.println("Top Speed: "+a);
+     }
+ }
+ class Main
+ {
+     public static void main(String[]args)
+     {
+         Scanner sc = new Scanner (System.in);
+         int a = sc.nextInt();
+         sc.nextLine();
+         for(int i=0;i<a;i++){
+        String name = sc.nextLine();
+         achu k = new achu();
+         k.brand();
+         k.bike(name);
+         k.speed(170);
+         }
+     }
+ }
