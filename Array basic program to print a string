@@ -1,0 +1,15 @@
+//Array basic program to print a string
+
+import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         String [] m = new String [3];
+         m [0] = sc.nextLine();
+         m [1] = sc.nextLine();
+         m [2] = sc.nextLine();
+         System.out.println("enter the m "+m[0]+" "+m[1]+" "+m[2]);
+     }
+ }
