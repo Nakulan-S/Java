@@ -1,0 +1,20 @@
+//odd or even problem
+
+import java.util.*;
+ import java.util.Scanner;
+ class num
+ {
+     public static void main(String[]args)
+     {
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        if(a%2==0)
+        {
+            System.out.print("EVEN NUMBER");
+        }
+        else
+        {
+            System.out.print("ODD NUMBER");
+        }
+     }
+ }
