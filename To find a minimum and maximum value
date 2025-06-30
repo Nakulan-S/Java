@@ -1,0 +1,14 @@
+//To find a minimum and maximum value
+
+import java.util.*;
+class nakul
+{
+    public static void main(String[]args)
+    {
+        int a[]={2,4,6,8,7};
+        Arrays.sort(a);
+        System.out.println(Arrays.toString(a));
+        System.out.println("mini value: " +a[0]+" "+"\n"+"max value: "+" "+a[a.length-1]);
+
+    }
+}
