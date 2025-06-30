@@ -1,5 +1,18 @@
 INBULIT FUNCTIONS
 
+         a.contains("red");
+         a.replace('h','k');
+         a.concat(b);
+         a.toUpperCase();
+         a.toLowerCase();
+         a.indexOf('u');
+         a.delete();
+         a.deletecharAt();
+         a.equals(b);
+         a.substring(1,2);
+         a.charAt(6);
+         a.length();
+
 24.concatenation
 import java.util.*;
  import java.util.Scanner;
