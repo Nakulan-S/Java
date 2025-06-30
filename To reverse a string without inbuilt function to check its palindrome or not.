@@ -1,0 +1,43 @@
+//to reverse a string without inbuilt function to check its palindrome or not.
+import java.util.*;
+import java.util.Scanner;
+
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int i=0,count=0;
+        System.out.print("Enter a name: ");
+        String b =sc.nextLine();
+        char c[]=new char[b.length()];
+        char d[]=new char[b.length()];
+        
+        for(i=0;i<b.length();i++)
+        {
+            c[i]=b.charAt(i);
+            d[b.length() - 1 - i] = c[i]; 
+        }
+        for(i=0;i<b.length();i++)
+        {
+            System.out.print(c[i]);
+        }
+         System.out.println();
+        for(i=0;i<b.length();i++)
+        {
+            if(c[i]==d[i])
+            {
+                count++;
+            }
+        }
+        System.out.println("Matching Words Count: "+count);
+        if(count==b.length())
+        {
+              System.out.println("palindrome");
+        }
+        else
+        {
+             System.out.println("Not palindrome");
+        }
+}
+}
