@@ -1,0 +1,20 @@
+//Array basic program to print a string using for loop
+ import java.util.*;
+ import java.util.Scanner;
+ class achu
+ {
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         String [] m = new String [3];
+         
+        for(int i=0;i<3;i++)
+        {
+             m [i] = sc.nextLine();
+        }
+         
+         for(int i=0;i<3;i++)
+         {
+             System.out.println(m[i]);
+         }
+     }
+ }
