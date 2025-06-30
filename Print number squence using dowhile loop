@@ -1,0 +1,19 @@
+//Print number squence using dowhile loop
+
+import java.util.*;
+import java.util.Scanner;
+class main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int l=1;
+        do{
+             System.out.println(a++);
+            l++;
+        }
+        while(l<=10);
+       
+    }
+} 
