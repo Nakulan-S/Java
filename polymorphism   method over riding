@@ -1,0 +1,32 @@
+//polymorphism
+  //method over riding
+// import java.util.Scanner;
+ class achu
+ {
+     void bike()
+     {
+         System.out.println("KTM");
+     }
+ }
+ class appu extends achu{
+     void bike()
+     {
+          System.out.println("Model"); 
+     }
+}
+ class scl extends appu{
+     void bike()
+     {
+          System.out.println("Models"); 
+     }
+}
+
+ class Main
+ {
+     public static void main(String[]args)
+     {
+       //  Scanner sc = new Scanner (System.in);
+         appu k = new scl();
+         k.bike();
+     }
+ }
