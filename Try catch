@@ -1,0 +1,19 @@
+
+class Main {
+    public static void main(String[] args) {
+        String[]names={"Ashok","Naguk","Raja","Muruga",null};
+        try
+        {
+            System.out.println(names[3]);
+            System.out.println(names[4].length());
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("value erroe:invalid index");
+        }
+        catch(NullPointerException e)
+        {
+            System.out.println("error:null value found");
+        }
+        System.out.println("Code run sucessfully");
+    }
+}
