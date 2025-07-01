@@ -10,7 +10,7 @@ public class Main {
 		int cakeCount= 5;
 		for(int i=0; i<cakeCount; i++) {
 			Cake cake= new Cake();
-			cake.start();
+			cake.start();//cake.run();start - id will differ run - id will same
 		}
 	}
 }
