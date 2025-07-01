@@ -1,0 +1,36 @@
+public class Main
+{
+    // Method to validate password
+	static void validatePassword(String password) throws Exception 
+	{
+		if (password.length() < 8) 
+		{
+			throw new Exception("unga pass word must be strong with atleast 8 Character");
+		} 
+		else 
+		{
+			System.out.println("Password is strong.");
+		}
+	}
+
+
+
+	public static void main(String[] args) 
+	{
+		String password = "123456789";
+
+		try 
+		{
+			validatePassword(password);  // we put exception part in try//
+		} 
+		catch (Exception e)
+		{
+			System.out.println("we got the Exception: " + e.getMessage()); //what type of exception is hear or else (exception)//
+		} 
+		finally 
+		{
+			System.out.println("Password validation complete.");// it will execute  automaticall (finally)
+		}
+		System.out.println("Program continues");
+	}
+}
