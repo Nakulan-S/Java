@@ -1,0 +1,32 @@
+class MyException extends Exception
+{
+	public MyException (String Message)
+	{
+		super(Message);
+	}
+}
+public class Main
+{
+	static void checkage(int mark)
+	throws MyException {
+		if (mark<35)
+		{
+			throw new MyException("Fail mark! you need at least get 35 to pass");
+		}
+		System.out.println("pass mark! good job");
+	}
+
+	public static void main(String[]args)
+	{
+		try
+		{
+			checkage(30);
+		}
+		catch(MyException e)
+		{
+			System.out.println("Caught custom exception: "+e.getMessage());
+		}
+	}
+}
+
+
