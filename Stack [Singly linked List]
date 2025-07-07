@@ -114,6 +114,7 @@ class Main{
         stack.pop();
         stack.display();
         System.out.println("Contains 30 "+stack.contains(30));
+        System.out.println("Contains 50 "+stack.contains(50));
         stack.clear();
         stack.display();
     }
