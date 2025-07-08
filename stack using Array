@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+class Stack {
+    int[] stackArray;
+    int top;
+    int capacity;
+
+    public void Siz(int size) {
+        capacity = size;
+        stackArray = new int[capacity];
+        top = -1;
+    }
+
+    public void push(int data) {
+        if (top == capacity - 1) {
+            System.out.println("Stack overflow");
+            return;
+        }
+        stackArray[++top] = data;
+        System.out.println(data + " pushed to the stack");
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack underflow");
+            return -1;
+        }
+        int popped = stackArray[top--];
+        System.out.println(popped + " popped from the stack");
+        return popped;
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+        return stackArray[top];
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public int size() {
+        return top + 1;
+    }
+
+    public void clear() {
+        top = -1;
+        System.out.println("Stack cleared");
+    }
+
+    public boolean contains(int value) {
+        for (int i = 0; i <= top; i++) {
+            if (stackArray[i] == value)
+                return true;
+        }
+        return false;
+    }
+
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return;
+        }
+        System.out.println("Stack bottom to top:");
+        for (int i = 0; i <= top; i++) {
+            System.out.print(stackArray[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Stack list = new Stack();
+        list.Siz(5);
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(4);
+        list.push(5);
+        list.pop();
+        System.out.println("Size of the stack: " + list.size());
+        System.out.println("Contains 5?: " + list.contains(5));
+
+        list.display();
+        System.out.println("Top element: " + list.peek());
+        list.display();
+        list.clear();
+        list.display();
+    }
+}
