@@ -12,6 +12,7 @@ INBULIT FUNCTIONS
          a.substring(1,2);
          a.charAt(6);
          a.length();
+         a.append();
          !Character.isLetterOrDigit(ch)//To remove a letter or Digits in charater.
 
 24.concatenation
