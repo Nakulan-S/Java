@@ -1,0 +1,26 @@
+//print the largest number from the rigth side
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {45, 20, 100, 23, -5, 2, 200, -6};
+        int n = arr.length;
+
+
+        int a = arr[n - 1];
+        arr[n - 1] = -1; 
+
+
+        for (int i = n - 2; i >= 0; i--) 
+        {
+            int temp = arr[i];
+            arr[i] = a;
+            if (temp > a) 
+            {
+                a = temp;
+            }
+        }
+        for (int num : arr) 
+        {
+            System.out.print(num + " ");
+        }
+    }
+}
