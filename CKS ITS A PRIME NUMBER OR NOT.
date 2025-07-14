@@ -1,0 +1,28 @@
+//CHECKS ITS A PRIME NUMBER OR NOT.
+import java.util.*;
+import java.util.Scanner;
+class achu
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter a Number: ");
+        int a = sc.nextInt();
+        int count=0;
+        for(int i=1;i<=a;i++)
+        {
+            if(a%i==0)
+            {
+                count++;
+            }
+        }
+        if(count==2)
+        {
+            System.out.print("Prime Number");
+        }
+        else
+        {
+            System.out.print("Not a Prime Number");
+        }
+    }
+}
