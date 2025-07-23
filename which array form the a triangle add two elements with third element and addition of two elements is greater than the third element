@@ -1,0 +1,42 @@
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b[]=new int[a];
+        for(int i=0;i<a;i++)
+        {
+            b[i]=sc.nextInt();
+        }
+        Arrays.sort(b);
+        int count=0;
+        for(int i=0;i<a;i++)
+        {
+            for(int j=0;j<a;j++)
+            {
+                for(int k=j+1;k<a;k++)
+                {
+                    if(b[i]>b[j]&&b[i]>b[k])
+                    {
+                        if(b[j]+b[k]>b[i])
+                        {
+                            System.out.println(b[j]+" + "+b[k]+" > "+b[i]);
+                            count++;
+                        }
+                    }
+                }
+            }
+        }
+        if(count>0)
+        {
+            System.out.print(count);
+        }
+        else
+        {
+            System.out.print("No Triangles Are Possible");
+        }
+    }
+}
