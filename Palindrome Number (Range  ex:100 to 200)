@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class achu {
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        String m;
+        int count=0;
+        System.out.println("Palindrome Numbers");
+        for(int i=a;i<=b;i++)
+        {
+            int k=i;
+            m="";
+            while(k!=0)
+            {
+                int l=k%10;
+                m+=l;
+                k/=10;
+            }
+            int n =Integer.parseInt(m);
+            if(i==n)
+            {
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.print("count: "+count);
+    }
+}
