@@ -1,5 +1,11 @@
 INBULIT FUNCTIONS
 
+         int to string syntax : 
+         int n =  Integer.parseInt(String-name);
+
+         String to int Syntax;
+         String s = Integer.toString(int-name);
+
          a.contains("red");
          a.replace('h','k');
          a.concat(b);
