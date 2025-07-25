@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        int b[] = new int [a];
+        for(int i=0;i<a;i++)
+        {
+            b[i]=sc.nextInt();
+        }
+        int j=0;
+        for(int i=0;i<a;i++)
+        {
+            if(b[i]!=b[j])
+            {
+                 j++;
+                b[j]=b[i];
+            }
+        }
+        System.out.print(j+1);
+    }
+}
